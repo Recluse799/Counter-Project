@@ -18,5 +18,13 @@
     <ClCompile Include="Counter Project.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="counterType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="counterType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
