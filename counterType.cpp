@@ -17,26 +17,31 @@ void counterType::setCounter(int count)
 void counterType::getCounter(int& count) const //accessor
 {
     count = ct;
+    
    
 }
 
 void counterType::incrementCounter()  //mutator
+
 {
-    ct++;
     if (ct >= 0)
     {
-        //min = 0;
-        incrementCounter();
+        ct++;
+      
     }
 }
 
 void counterType::decrementCounter()  //mut
 {
-    ct--;
-    if (ct >= 1)
+    
+    if (ct > 0)
     {
-       // min = 0;
-        decrementCounter();
+        ct--;
+
+    }
+    else
+    {
+        cout << "Counter is already at zero. Cannot decrement further." << endl;
     }
 }
 
@@ -46,7 +51,6 @@ void counterType::printCounter() const
         
     cout << ct << ":";
 
-
 }
 
 bool counterType::equalCounter(const counterType& othercounter) const //mut
@@ -55,9 +59,11 @@ bool counterType::equalCounter(const counterType& othercounter) const //mut
 }
 
 
-void counterType::resetCounter()
+void counterType::resetCounter(int count)
 {
-   ct = 0;
+    ct = count;
+       ct = 0;
+   
 }
 
 counterType::counterType(int count)  //mutator, same as setcounter
