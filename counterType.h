@@ -41,7 +41,8 @@ class counterType
     //               1, after the count is 2. 
 
     void decrementCounter();
-    //Pre: accepts nonnegative number, Function to decrement the count.
+    //Pre: accepts nonnegative number, Function to decrement the count
+    // else, returns number is already 0.
     //Postcondition: The count is decremented by one . 
     //               If the before-decrement count is 
     //               1, after the count is 0.
